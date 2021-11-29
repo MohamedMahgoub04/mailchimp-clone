@@ -18,18 +18,26 @@
 
    <div id="email-div" class="prompt column">
     <label for="">Email</label>
-    <input type="email" name="" id="">
+    <input type="email" >
    </div>
    <div id="username-div" class="prompt column">
     <label for="">Username</label>
-    <input type="text" name="" id="">
+    <input type="text" id="user">
+    <p id="user-modal">Choose a username that contains only letters and numbers, or use your email address. This is for login only.</p>
    </div>
    <div id="password-div" class="prompt column">
     <label for="">Password</label>
-    <input type="password" name="" id="">
+    <input type="password" id="pass">
+    <ul id="rules">
+     <li class="one">One lowercase character</li>
+     <li class="two">One special character</li>
+     <li class="three">One uppercase character</li>
+     <li class="four">8 characters minimum</li>
+     <li class="five">One number</li>
+    </ul>
    </div>
    <div id="checkbox-div" class="prompt row">
-    <input type="checkbox" name="" id="check">
+    <input type="checkbox" id="check">
     <label id="promo" for="check">I don't want to recieve <a href="#" class="underline">promotional emails</a> from Mailchimp.</label>
    </div>
 
