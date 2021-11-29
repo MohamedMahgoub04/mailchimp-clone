@@ -38,6 +38,10 @@ p, #promo{
  font-size: var(--small);
 }
 
+body{
+ display: flex;
+ flex-direction: row;
+}
 
 main{
  background-color: #fff;
@@ -192,4 +196,43 @@ section{
  height: 100vh;
  justify-content: space-around;
  align-items: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px){
+ body{
+  flex-direction: column;
+ }
+ main, section{
+  width: 100%;
+ }
+ #content{
+  width: 60%;
+ }
+ section{
+  border-left: 8px solid var(--yellow);
+  height: 500px;
+ }
+ section img{
+  height: 80%;
+ }
+}
+
+@media screen and (max-width: 620px){
+ main{
+  border-left: none;
+  border-top: 8px solid var(--yellow);
+  height: 750px;
+ }
+ #content{
+  margin: 0 auto;
+  width: 90%;
+ }
+ button{
+  width: 100%;
+ }
+ section{
+  margin: 0;
+  border-left: none;
+ }
 }
